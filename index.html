@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+
 </head>
+
 <body>
+  <section>
+    <h1>Number guessing game</h1>
+
+    <form action="">
+      <fieldset>
+        <p>In how many rounds you think you can guess the number?</p <div><input type="radio" name="num4" id="num"
+          onchange="radioCustomChecked()" checked>4</div>
+        <div><input type="radio" name="num5" id="num" onchange="radioCustomChecked()">5</div>
+        <div><input type="radio" name="num6" id="num" onchange="radioCustomChecked()">6</div>
+        <div><input type="radio" name="customNum" id="num" onchange="radioCustomChecked()">Custom</div>
+        <div><input type="number" name="" id="num" min="1" max="100" value="10">Maximum Rounds</div>
+        <input type="button" value="Start Game" onclick="startGame()">
+      </fieldset>
+
+      <fieldset>
+        <div><input type="number" name="numGuess" id="num" min="1" max="100" placeholder="Your number"></div>
+        <input type="button" id="buttonGuess" value="Guess" onclick="checkNumber()">
+      </fieldset>
+
+      <fieldset>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </fieldset>
+    </form>
+
+
+
+  </section>
+
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
